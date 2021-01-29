@@ -3,9 +3,18 @@
 ## install and run
 
 ```bash
-# install app
+python3 installer.py
+```
+
+## or
+
+```bash
+# install electron-app
 npm install
 
-# start
+# start server.py
+python3 server.py
+
+# start electron-app
 npm run start
 ```
