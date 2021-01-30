@@ -16,16 +16,18 @@ apt update
 apt install -y nodejs npm python3 python3-pip
 ```
 
-### Install
+### Server
 
 ```bash
+cd server
 pip3 install -r requirements.txt
-npm install
+python3 server.py
 ```
 
-### Run
+### Client
 
 ```bash
-python3 server.py &
+cd client
+npm install
 npm run start
 ```
