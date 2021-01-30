@@ -9,7 +9,7 @@ from tornado.options import define, options
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-        self.write("server say: 'Hello, world!'")
+        self.write("Hello, world!")
 
 class MyApplication(tornado.web.Application):
     is_closing = False
