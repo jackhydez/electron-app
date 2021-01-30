@@ -36,5 +36,5 @@ if __name__ == "__main__":
     tornado.options.parse_command_line()
     app.listen(options.port)
     tornado.ioloop.PeriodicCallback(app.try_exit, 100).start()
-    print("Start server")
+    print("Start server on port", options.port)
     tornado.ioloop.IOLoop.instance().start()
