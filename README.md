@@ -1,20 +1,31 @@
 # electron-app
 
-## install and run
+## Automatically
 
 ```bash
-python3 installer.py
+./install.sh
+./run.sh
 ```
 
-## or
+## Manually
+
+### Pre-installed depences
 
 ```bash
-# install electron-app
+apt update
+apt install -y nodejs npm python3 python3-pip
+```
+
+### Install
+
+```bash
+pip3 install -r requirements.txt
 npm install
+```
 
-# start server.py
-python3 server.py
+### Run
 
-# start electron-app
+```bash
+python3 server.py &
 npm run start
 ```
