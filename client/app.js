@@ -1,9 +1,9 @@
 
-let result = document.querySelector('#result')
+let result = document.querySelector('.result');
 
 function setIntervalX(callback, delay, repetitions) {
-    var x = 0;
-    var intervalID = window.setInterval(function () {
+    let x = 0;
+    let intervalID = window.setInterval(function () {
 
        callback();
 
@@ -13,9 +13,9 @@ function setIntervalX(callback, delay, repetitions) {
     }, delay);
 }
 
-function addTag(data) {
-    var tag = document.createElement("div");
-    var text = document.createTextNode(data);
+function createTag(data) {
+    let tag = document.createElement("div");
+    let text = document.createTextNode(data);
     tag.appendChild(text);
     result.appendChild(tag);
 }
@@ -23,5 +23,5 @@ function addTag(data) {
 setIntervalX(function () {
     fetch('http://localhost:9999/')
       .then(response => response.text())
-      .then(data => addTag(data));
-}, 1000, 5);
+      .then(data => createTag(data));
+}, 500, 7);

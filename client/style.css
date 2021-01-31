@@ -2,6 +2,6 @@ body {
     background-color: grey;
 }
 
-#result {
+.result {
     color:greenyellow;
 }
