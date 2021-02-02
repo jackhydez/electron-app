@@ -1,5 +1,11 @@
 # electron-app
 
+## Automatically install and run
+
+```bash
+./start.sh
+```
+
 ## Automatically
 
 ```bash
